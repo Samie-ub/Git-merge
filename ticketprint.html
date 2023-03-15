@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ticketprint.css" />
+    <title>Ticket</title>
+  </head>
+  <body>
+    <div class="ticket-main">
+      <a href="./ticket.html">Back</a>
+      <div class="container">
+        <div class="logo-head">
+          <img class="t-logo" src="./imgs/sample.png" />
+          <h4>Hussaini Suspension Bridge Ticketing System</h4>
+        </div>
+        <table id="ticket">
+          <thead>
+            <tr>
+              <th>Name:</th>
+              <th>Date: <span id="date-time"></span></th>
+              <th>No of Persons:</th>
+              <th>Total:</th>
+            </tr>
+          </thead>
+        </table>
+        <div
+          style="display: flex; justify-content: flex-end; margin-right: 10px"
+        >
+          <img
+            style="width: 50px; height: 50px"
+            src="./imgs/icon@4x 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      var dt = new Date();
+      document.getElementById("date-time").innerHTML = dt;
+    </script>
+  </body>
+</html>
